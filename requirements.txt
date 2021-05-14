@@ -1,0 +1,13 @@
+tqdm
+colorama
+numpy
+scipy
+scikit-learn
+matplotlib
+hydra-core
+jupyterlab
+tensorboard
+yapf
+isort
+mypy
+flake8

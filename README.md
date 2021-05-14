@@ -5,7 +5,10 @@ Normalizing Flows by PyTorch
 
 > PyTorch implementations of the networks for normalizing flows.
 
-Models
+I note that this repository is forked from [here](https://github.com/tatsy/normalizing-flows-pytorch) and to studying normalizing flow algorithms for me.  
+Thanks [tatsy-san](https://github.com/tatsy)!
+
+Models 
 ---
 
 Currently, following networks are implemented.
@@ -31,6 +34,13 @@ This repository is for easier understanding of the above networks. Therefore, yo
 Setup
 ---
 
+### Docker
+```shell
+$ bash scripts/docker/build.sh
+$ bash scripts/docker/exec.sh
+```
+
+
 ### Anaconda
 
 By Anaconda, you can easily setup the environment using `environment.yml`.
@@ -51,7 +61,7 @@ This repo uses `hydra` to manage hyper parameters in training and evaluation. Se
 ```shell
 $ python main.py \
     network=[planar, realnvp, glow, flow++, maf, resflow, ffjord]\
-    train.distrib=[circles, moons, normals, swiss, s_curve, mnist, cifar10]
+    run.distrib=[circles, moons, normals, swiss, s_curve, mnist, cifar10]
 ```
 
 **Note:**
